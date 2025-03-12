@@ -1353,4 +1353,151 @@ numbersection */
     padding: 15px;
     font-size: 0.9rem;
   }
+  .king-icon{
+    width: 80px;
+    height:100%
+  }
+}
+
+/* Testimonials Section */
+#testimonials {
+  background-color: #f2f4f6;
+  padding: 80px 120px;
+  margin-top: 80px;
+}
+
+.testimonials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.testimonials-header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #111;
+}
+
+.see-all {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+}
+
+.arrow-icon {
+  margin-left: 8px;
+}
+
+.testimonials-container {
+  display: flex;
+  gap: 30px;
+}
+
+.testimonial-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  position: relative;
+  flex: 1;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.quote-mark {
+  font-size: 4rem;
+  color: #FFB600;
+  line-height: 1;
+  margin-bottom: 10px;
+  font-family: serif;
+}
+
+.testimonial-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.author-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-info h4 {
+  font-weight: 600;
+  margin: 0 0 5px 0;
+}
+
+.author-info p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 40px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  width: 30px;
+  border-radius: 10px;
+  background-color: #003b5c;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  #testimonials {
+    padding: 60px 80px;
+  }
+}
+
+@media (max-width: 900px) {
+  #testimonials {
+    padding: 50px 40px;
+  }
+  
+  .testimonials-container {
+    flex-direction: column;
+  }
+  
+  .testimonials-header h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #testimonials {
+    padding: 40px 20px;
+  }
+  
+  .testimonials-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .testimonials-header h2 {
+    font-size: 1.8rem;
+  }
 }
