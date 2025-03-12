@@ -1072,12 +1072,12 @@ brigde section */
     align-items: center;
     gap: 30px;
     flex-direction: column-reverse;
-    justify-content:center;
-    text-align:center;
-    display:flex;
+    justify-content: center;
+    text-align: center;
+    display: flex;
   }
-  .bridge-text{
-    display:flex
+  .bridge-text {
+    display: flex;
   }
 }
 
@@ -1106,8 +1106,8 @@ brigde section */
   .award-badge {
     right: -3px;
     bottom: 54px;
-    width:110px;
-    height:110px
+    width: 110px;
+    height: 110px;
   }
 }
 
@@ -1122,5 +1122,65 @@ brigde section */
     height: 150px;
     right: 3px;
     bottom: 70px;
+  }
+}
+/* 
+numbersection */
+#numbers {
+  padding: 20px;
+  text-align: center;
+}
+
+.numbers-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  color: #003b5c;
+  margin-top: 50px;
+  font-size: 2rem;
+  align-items:center
+}
+
+.number-item {
+  flex: 1 1 45%;
+  max-width: 200px;
+  text-align: center;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .trusted-logos img {
+    width: 60px;
+  }
+
+  #high-level-sales {
+    flex-direction: column;
+  }
+
+  .cards-container {
+    flex-direction: column;
+  }
+
+  .brigde-section {
+    flex-direction: column;
+  }
+
+  .award-badge {
+    bottom: -10px;
+    right: 5px;
+  }
+
+  .numbers-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 900px) {
+  .numbers-container {
+    display: flex;
+    font-size: 1.5rem;
+    gap:10px;
   }
 }
