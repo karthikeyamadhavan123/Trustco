@@ -1630,3 +1630,162 @@ numbersection */
     padding: 40px 0;
   }
 }
+
+/* cta-section */
+/* Base Styles */
+.cta-banner {
+  position: relative;
+  background-color: #121620; /* Dark navy background */
+  color: #fff;
+  overflow: hidden;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* Flexible Content Layout */
+.cta-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+/* Text Styling */
+.cta-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.cta-text h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+/* CTA Button */
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9B84A;
+  color:white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  font-size: 18px;
+}
+
+.cta-button:hover {
+  background-color: #eaa93a;
+  transform: translateY(-2px);
+}
+
+.cta-button .arrow {
+  margin-left: 8px;
+}
+
+.cta-no-credit {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-top: 12px;
+}
+
+/* Image Container */
+.cta-image {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 500px;
+}
+
+.cta-person {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+
+/* Large tablets and small desktops (below 1200px) */
+@media (max-width: 1200px) {
+  .cta-text h2 {
+    font-size: 42px;
+  }
+}
+
+/* Tablets (834px and below) */
+@media (max-width: 900px) {
+  .cta-banner {
+    padding: 30px 20px;
+  }
+  
+  .cta-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .cta-text {
+    max-width: 100%;
+    order: 1;
+  }
+  
+  .cta-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    display: flex;
+    width: 80%;
+    max-width: 300px;
+    margin: 20px auto 0;
+  }
+  
+  .cta-no-credit {
+    margin: 12px auto 40px;
+  }
+  
+  .cta-image {
+    order: 2;
+    justify-content: center;
+    max-width: 100%;
+  }
+  
+  .cta-person {
+    max-width: 280px;
+  }
+}
+
+/* Mobile Phones (below 600px) */
+@media (max-width: 600px) {
+  .cta-banner {
+    padding: 30px 15px;
+  }
+  
+  .cta-text h2 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+  
+  .cta-button {
+    width: 90%;
+    max-width: 280px;
+  }
+  
+  .cta-person {
+    max-width: 240px;
+  }
+}
