@@ -1183,4 +1183,174 @@ numbersection */
     font-size: 1.5rem;
     gap:10px;
   }
+  .number-item {
+    font-size:1rem;
+  }
+}
+
+/* Meet Our Founder Section */
+#meet-founder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 150px;
+  gap: 64px;
+  text-align: center;
+}
+
+.founder-image-container {
+  position: relative;
+}
+
+.man {
+  width: 711px;
+  height: 504px;
+  border-radius: 12px;
+}
+
+.woman-circle {
+  position: absolute;
+  bottom: -2%;
+  left: 13%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.king-icon {
+  position: absolute;
+  bottom: -8%;
+  left: 60%;
+  z-index: -1;
+}
+
+.king-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.woman-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.founder-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.Founder {
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: start;
+}
+
+.bui-para {
+  width: 400px;
+  text-align: start;
+}
+
+.owner {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 20px;
+  text-align: start;
+}
+
+.owner-button {
+  background-color: #003b5c;
+  color: white;
+  padding: 20px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  #meet-founder {
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 40px;
+  }
+  
+  .man {
+    width: 500px;
+    height: auto;
+  }
+  
+  .bui-para {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  #meet-founder {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .founder-text {
+    align-items: center;
+  }
+  
+  .Founder, .bui-para, .owner {
+    text-align: center;
+  }
+  
+  .owner-button {
+    align-self: center;
+  }
+  
+  .man {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .woman-circle {
+    bottom: 5%;
+    left: 10%;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .king-icon {
+    bottom: -5%;
+    left: 55%;
+  }
+}
+
+@media (max-width: 576px) {
+  .Founder {
+    font-size: 2rem;
+  }
+  
+  .bui-para {
+    font-size: 0.9rem;
+  }
+  
+  .woman-circle {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .owner-button {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
 }
