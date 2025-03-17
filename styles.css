@@ -1790,6 +1790,77 @@ numbersection */
   }
 }
 
+.developed-by-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.developed-by-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.developed-by-container p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.developed-by-container strong {
+  font-size: 1.2rem;
+  color: purple;
+  margin-bottom: 20px;
+}
+
+.developed-by-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.collaborators-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.collaborator-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+
+.collaborator-item img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .developed-by-container p {
+    font-size: 1rem;
+  }
+
+  .developed-by-container h2 {
+    font-size: 1rem;
+  }
+
+  .collaborator-item img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .collaborator-item img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
 /* footer */
 .main-footer {
   background-color: #f8f9fa;
