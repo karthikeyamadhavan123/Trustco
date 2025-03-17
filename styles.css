@@ -1956,67 +1956,93 @@ numbersection */
 }
 
 .footer-bottom {
-  margin-top: 50px;
-  padding: 25px 0;
-  border-top: 1px solid #e0e0e0;
-  width: 100%;
+  background-color: #f8f8f8;
+  border-top: 1px solid #e7e7e7;
+  padding: 20px 0;
+  text-align: center;
 }
 
-.footer-bottom .footer-container {
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 }
 
 .copyright {
-  color: #666;
-  margin: 0;
+  color: #9aa0a6;
+  font-size: 14px;
+  margin-bottom: 20px;
 }
 
 .legal-links {
+  margin-bottom: 20px;
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .legal-links a {
-  color: #666;
+  color: #9aa0a6;
   text-decoration: none;
-  transition: color 0.3s ease;
+  font-size: 14px;
+  margin: 0 20px;
+  transition: color 0.2s ease;
 }
 
 .legal-links a:hover {
-  color: #1e4c84;
+  color: #333;
+  text-decoration: underline;
 }
 
-@media (max-width: 992px) {
-  .footer-company-info,
-  .para-text1,
-  .footer-nav {
-    flex: 0 0 100%;
-  }
-  
-  .para-text1 {
-    padding: 0;
-    margin-bottom: 30px;
-  }
-  
-  .footer-nav {
-    gap: 50px;
-  }
+/* Language selector styles */
+.language-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #9aa0a6;
+  font-size: 14px;
+  padding: 5px 10px;
+  transition: color 0.2s ease;
 }
 
-@media (max-width: 768px) {
+.language-selector:hover {
+  color: #333;
+}
+
+.globe-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  color: #9aa0a6;
+}
+
+.arrow-icon {
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #9aa0a6;
+  margin-top: 3px;
+}
+
+/* For desktop view */
+@media (min-width: 768px) {
   .footer-container {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
   }
-
-  .footer-nav {
-    margin-top: 20px;
-    gap: 30px;
+  
+  .copyright {
+    margin-bottom: 0;
   }
-
-  .footer-bottom .footer-container {
-    flex-direction: column;
-    gap: 15px;
+  
+  .legal-links {
+    margin-bottom: 0;
   }
 }
