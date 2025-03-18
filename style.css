@@ -56,19 +56,24 @@ body {
   gap: 10px; 
 }
 
-.auth-buttons button {
-  padding: 8px 16px;
-  border: none;
-  border-radius: 4px;
-  background-color: #007bff;
-  color: #fff;
+
+#log-in,#sign-up{
+  padding: 10px 16px;
+  color: black;
+  font-weight:bolder;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  border-radius:20px;
+  border:none;
+}
+#sign-up{
+  color:white;
+  background-color:#0D3A59;
+
 }
 
-.auth-buttons button:hover {
+/* .auth-buttons button:hover {
   background-color: #0056b3; 
-}
+} */
 
 
 .contact-container {
@@ -479,5 +484,169 @@ textarea:focus {
 .language-selector:hover {
   background-color: #e9ecef;
 }
+.hamburger-menu{
+  display:none;
+}
 
 /* Responsive Adjustments */
+/* Existing CSS remains the same until the media queries */
+
+/* Responsive Adjustments */
+/* Mobile-specific styling updates */
+@media (max-width: 768px) {
+  /* Footer styling to match image */
+  .footer {
+    text-align: center;
+    padding-top: 2rem;
+  }
+  
+  .footer-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    align-items:center;
+  }
+  .nav-links, .auth-buttons {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+  }
+  .footer-logo img {
+    width: 120px; /* Smaller logo on mobile */
+  }
+  
+  /* Social icons styling - appears as circles in the image */
+  .social-icons {
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  
+  .social-icon {
+    background-color: #f0f0f0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+  
+  /* Footer description styling */
+  .footer-description {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin: 0.75rem auto;
+    max-width: 280px;
+  }
+  
+  /* Navigation layout in footer */
+  .footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* align-items:center; */
+    width: 100%;
+    gap: 0;
+    margin: 1rem 0;
+  }
+  
+  .footer-nav-column {
+    text-align: left;
+  }
+  
+  .footer-nav-column h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .footer-nav-column ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-nav-column ul li a {
+    font-size: 0.85rem;
+  }
+  
+  /* Footer bottom area */
+  .footer-bottom {
+    padding: 0.5rem 0;
+    background-color: transparent;
+    border-top: none;
+  }
+  
+  .footer-bottom-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .footer-links a {
+    font-size: 0.8rem;
+    color: #999;
+  }
+  
+  .language-selector {
+    justify-content: center;
+    margin: 0.5rem 0;
+    color: #999;
+  }
+  
+  .copyright {
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+    color: #999;
+  }
+  
+  /* Submit button and checkbox styling */
+  .submit-button {
+    width: 100%;
+    border-radius: 24px;
+    padding: 0.75rem 0;
+    font-size: 0.9rem;
+  }
+  
+  .terms-checkbox {
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .form-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-brand{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Even smaller screens */
+  .footer-logo img {
+    width: 100px;
+  }
+  
+  .footer-description {
+    font-size: 0.8rem;
+    max-width: 260px;
+  }
+  
+  .social-icon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .footer-nav-column h3 {
+    font-size: 0.9rem;
+  }
+  
+  .footer-nav-column ul li a {
+    font-size: 0.8rem;
+  }
+}
