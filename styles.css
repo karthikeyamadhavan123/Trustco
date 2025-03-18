@@ -282,20 +282,6 @@ body {
 /* style.css */
 
 /* General Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
-  background-color: #f9f9f9;
-  overflow-x: hidden;
-}
 
 .main-content {
   background-color: #f2f5f6;
@@ -1503,8 +1489,9 @@ numbersection */
 }
 
 /* Blog Section Styles */
+/* Blog Section Styles */
 .blogs-section {
-  padding: 60px 0;
+  padding: 40px 0;
   background-color: #f8f8f8;
 }
 
@@ -1516,13 +1503,14 @@ numbersection */
 
 .blog-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 30px;
 }
 
 .blog-title {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #222;
 }
@@ -1533,8 +1521,8 @@ numbersection */
 
 .blog-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
 .blog-card {
@@ -1599,35 +1587,26 @@ numbersection */
 }
 
 /* Responsive Styles */
-@media (max-width: 992px) {
+@media (max-width: 576px) {
   .blog-grid {
-    grid-template-columns: repeat(2, 1fr);
+   display:flex
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .blog-title {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
   
   .blog-header {
-    margin-bottom: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
   }
-}
 
-@media (max-width: 576px) {
   .blog-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .blog-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-  }
-
-  .blogs-section {
-    padding: 40px 0;
+    display:flex
   }
 }
 
@@ -1766,6 +1745,14 @@ numbersection */
   
   .cta-person {
     max-width: 280px;
+  }
+  .footer-nav{
+    margin-top:30px;
+  }
+  .footer-container{
+    display:flex;
+    align-items:center;
+    justify-content:center
   }
 }
 
