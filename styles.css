@@ -2020,15 +2020,6 @@ numbersection */
   color: #9aa0a6;
 }
 
-.arrow-icon {
-  width: 10px;
-  height: 10px;
-  margin-left: 5px;
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
-  border-top: 4px solid #9aa0a6;
-  margin-top: 3px;
-}
 
 /* For desktop view */
 @media (min-width: 768px) {
