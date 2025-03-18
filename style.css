@@ -516,7 +516,13 @@ textarea:focus {
   .footer-logo img {
     width: 120px; /* Smaller logo on mobile */
   }
-  
+  .contact-heading{
+    font-size:1.5rem
+  }
+  .contact-subheading{
+    font-size:1rem;
+  }
+
   /* Social icons styling - appears as circles in the image */
   .social-icons {
     justify-content: center;
@@ -648,5 +654,14 @@ textarea:focus {
   
   .footer-nav-column ul li a {
     font-size: 0.8rem;
+  }
+  .contact-options{
+    justify-content:start
+  }
+  .contact-card{
+    border-radius:0px;
+    background-color:transparent;
+    box-shadow:none;
+    width:100%;
   }
 }
